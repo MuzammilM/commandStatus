@@ -1,3 +1,8 @@
+#Author: MuzammilM
+#Checks if a command executes successfully via exit status
+COLOR='\033[0;31m'
+reset=`tput sgr0`
+
 execute()
 {
         value=$1
@@ -12,7 +17,7 @@ execute()
         then
                 :
         else
-                echo "Command "$*" failed to execute"
+                echo "${COLOR}Command "$*" failed to execute${reset}"
                 if [[ $value == "exit" ]]
                 then
                         exit;
