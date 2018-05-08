@@ -1,4 +1,4 @@
-# commandStatus
+# CommandStatus
 Checks if a command executes successfully via exit status
 
 ## Install utility via curl
